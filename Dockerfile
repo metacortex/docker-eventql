@@ -18,11 +18,7 @@ COPY ./evqld.conf /etc/evqld.conf
 
 RUN mkdir -p /var/evql
 
-# RUN groupadd -r eventql && useradd -r -g eventql eventql
-# RUN chown -R :eventql /var/evql
-
 EXPOSE 9175
-# USER eventql
 
 ENTRYPOINT ["/usr/local/bin/evqld",  "--datadir", "/var/evql"]
 CMD ["--standalone"]
