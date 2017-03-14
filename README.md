@@ -10,3 +10,4 @@ docker pull metacortex/eventql
 
 ## TODO:
 - [ ] try alpine linux
+- [ ] script - build, tagging, push
