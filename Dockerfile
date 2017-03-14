@@ -20,5 +20,5 @@ RUN mkdir -p /var/evql
 
 EXPOSE 9175
 
-ENTRYPOINT ["/usr/local/bin/evqld",  "--datadir", "/var/evql"]
+ENTRYPOINT ["/usr/local/bin/evqld", "-c", "/etc/evqld.conf", "--datadir", "/var/evql"]
 CMD ["--standalone"]
